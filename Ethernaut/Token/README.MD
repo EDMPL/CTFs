@@ -16,4 +16,4 @@ In this challange we are given 20 tokens and must add our token somehow.
 
 The solution is pretty simple, we see that the smart contract is using old compiler version (0.6.0). Before 0.8.0, the arithmetic of solidity still allows for integer overflow and underflow. Here, what we can do is to transfer 21 tokens since there is also no check if the supplied value more than our balance to begin with. This cause integer underflow since 20 - 21 and the balance is uint256 (resulting in very big number).
 
-![Solved](img/token2.png)
+![Solved](img/token3.png)
